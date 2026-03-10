@@ -96,17 +96,25 @@ This project therefore serves as an exploration of the pipeline and challenges i
 ## Repository Structure
 
 ```
-data_generation.py
-    Downloads historical market data and generates technical indicators and movement labels.
-
-dataset_normalization.py
-    Normalizes the dataset using mean and standard deviation.
-
-model_training.py
-    Builds the CNN-LSTM model, trains it on sequential data, and evaluates predictions.
-
-environment_check.py
-    Utility script for verifying installed TensorFlow and related library versions.
+StockTest/
+│
+├── Data Preparation/
+│   ├── market_extraction.py
+│   │   Downloads historical QQQ market data and generates technical indicators
+│   │   and movement labels (Up, Down, Neutral).
+│   │
+│   └── normalize_data.py
+│       Standardizes the dataset features using mean and standard deviation.
+│
+├── cnn.py
+│   Builds and trains the CNN + Bidirectional LSTM model and evaluates
+│   predictions using a classification report and confusion matrix.
+│
+├── market_data_3class_final.csv
+│   Final processed dataset containing engineered features and labels.
+│
+└── test.py
+    Utility script used for testing the dataset and checking library versions.
 ```
 
 ## Purpose of the Project
