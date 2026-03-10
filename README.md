@@ -122,3 +122,6 @@ StockTest/
 The purpose of this project was to experiment with deep learning techniques applied to financial time series data and to build a complete machine learning pipeline from raw market data to model evaluation.
 
 It also illustrates the practical difficulties of predicting financial markets using historical price-based indicators alone.
+
+## Author
+Michał Kryspin Stec
